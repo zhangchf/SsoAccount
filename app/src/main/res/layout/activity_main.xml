@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="zcf.myaccount.MainActivity"
+    tools:layout_editor_absoluteY="81dp">
+
+    <Button
+        android:id="@+id/btnAddAccount"
+        android:layout_width="wrap_content"
+        android:layout_height="46dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="17dp"
+        android:text="Add Account by AccountManager"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtAuthToken" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="37dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="24dp"
+        android:text="My Accounts:"
+        android:textSize="25dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtMyAccounts"
+        android:layout_width="279dp"
+        android:layout_height="160dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="84dp"
+        android:background="?attr/colorButtonNormal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="276dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="40dp"
+        android:layout_marginStart="52dp"
+        android:text="Login"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnGetAuthToken"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="24dp"
+        android:text="Get Auth Token"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtMyAccounts" />
+
+    <TextView
+        android:id="@+id/txtAuthToken"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="17dp"
+        android:text="AuthToken:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnGetAuthToken" />
+</android.support.constraint.ConstraintLayout>
